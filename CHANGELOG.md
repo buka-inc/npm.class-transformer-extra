@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/buka-lnc/npm.class-transformer-extra/compare/v1.1.1...v2.0.0) (2024-08-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* The first parameter of ToBoolean changes
+
+### Features
+
+* add optional parameter and custom false values to ToBoolean transformer ([9232fee](https://github.com/buka-lnc/npm.class-transformer-extra/commit/9232feee08993a62eeb0324849506f2cab0055b8))
+
 ## [1.1.1](https://github.com/buka-lnc/npm.class-transformer-extra/compare/v1.1.0...v1.1.1) (2024-02-19)
 
 

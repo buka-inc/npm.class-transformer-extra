@@ -54,6 +54,15 @@ pnpm install @buka/class-transformer-extra class-transformer
 | :------------- | :----------------- | :---------------- |
 | `@ToBoolean()` | `1`                | `true`            |
 
+> ToBoolean() has multiple parameters to adapt to different needs, examples:
+>
+> > `ToBoolean(v => Boolean(v)), { optional: true })`:
+> > If the value is `undefined`, do nothing. Otherwise, `v => Boolean(v)` will be used to transform value.
+>
+> > `ToBoolean(['0', 'false', false], { optional: true })`:
+> >
+> > If the value is `'0'` or `'false'` or `false`, transform to `false`, and if the value is `undefined`, do nothing, otherwise value will be transform to `true`.
+
 ### Array
 
 | method                              | before transformer      | after transformer |

@@ -19,6 +19,6 @@ export function ToBigInt(options?: ToBigIntTransformOptions): PropertyDecorator 
         return NaN
       }
     },
-    options
+    options,
   )
 }

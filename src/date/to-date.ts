@@ -12,6 +12,6 @@ export function ToDate(options?: ToDateTransformOptions): PropertyDecorator {
       return new Date(value)
     },
 
-    options
+    options,
   )
 }

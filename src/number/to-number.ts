@@ -11,6 +11,6 @@ export function ToNumber(options?: ToNumberTransformOptions): PropertyDecorator 
       if (options?.optional && value === undefined) return undefined
       return Number(value)
     },
-    options
+    options,
   )
 }

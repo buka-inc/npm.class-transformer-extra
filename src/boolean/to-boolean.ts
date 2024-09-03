@@ -42,8 +42,5 @@ export function ToBoolean(falseValuesOrTransformer: ToBooleanParams = Boolean, o
 
   const to = buildMapping(falseValuesOrTransformer, options)
 
-  return Transform(({ value }) => {
-    if (options?.optional && value === undefined) return undefined
-    return to(value)
-  }, options)
+  return Transform(({ value }) => to(value), options)
 }

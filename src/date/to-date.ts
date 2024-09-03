@@ -1,6 +1,17 @@
 import { Transform, TransformOptions } from 'class-transformer'
 
 
-export function ToDate(options?: TransformOptions): PropertyDecorator {
-  return Transform(({ value }) => new Date(value), options)
+interface ToDateTransformOptions extends TransformOptions {
+  optional?: boolean
+}
+
+export function ToDate(options?: ToDateTransformOptions): PropertyDecorator {
+  return Transform(
+    ({ value }) => {
+      if (options?.optional && value === undefined) return undefined
+      return new Date(value)
+    },
+
+    options
+  )
 }

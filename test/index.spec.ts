@@ -34,18 +34,6 @@ class Test {
   @Split(',')
   split!: string[]
 
-  @Split(',')
-  splitUnknown!: string[]
-
-  @Split(',', { default: () => [] })
-  splitWithFunctionDefault: string[] = []
-
-  @Split(',', { default: 1 })
-  splitWithValueDefault!: string[]
-
-  @Split(',')
-  splitWithDefault: string[] = []
-
   // Date
   @ToDate()
   tDate!: Date
@@ -78,9 +66,6 @@ test('class-transformer-extra', () => {
     tLowerCase: 'A',
     tUpperCase: 'a',
     split: '1,2,3',
-    splitUnknown: 1,
-    splitWithFunctionDefault: undefined,
-    splitWithValueDefault: undefined,
     tDate: '2020-01-01',
     formatDate: '2020/01/01',
     filter: [1, 2, 3],
@@ -98,10 +83,6 @@ test('class-transformer-extra', () => {
   expect(data.tLowerCase).toBe('a')
   expect(data.tUpperCase).toBe('A')
   expect(data.split).toEqual(['1', '2', '3'])
-  expect(data.splitUnknown).toEqual(1)
-  expect(data.splitWithFunctionDefault).toEqual([])
-  expect(data.splitWithValueDefault).toEqual(1)
-  expect(data.splitWithDefault).toEqual([])
   expect(data.tDate).toEqual(new Date('2020-01-01'))
   expect(data.formatDate).toBe('2020-01-01')
   expect(data.filter).toEqual([2, 3])

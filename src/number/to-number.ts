@@ -1,9 +1,16 @@
 import { Transform, TransformOptions } from 'class-transformer'
 
 
-export function ToNumber(options?: TransformOptions): PropertyDecorator {
+export interface ToNumberTransformOptions extends TransformOptions {
+  optional?: boolean
+}
+
+export function ToNumber(options?: ToNumberTransformOptions): PropertyDecorator {
   return Transform(
-    ({ value }) => Number(value),
+    ({ value }) => {
+      if (options?.optional && value === undefined) return undefined
+      return Number(value)
+    },
     options
   )
 }

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/buka-lnc/npm.class-transformer-extra/compare/v2.0.0...v2.1.0) (2024-09-03)
+
+
+### Features
+
+* support optional property ([0bebc38](https://github.com/buka-lnc/npm.class-transformer-extra/commit/0bebc3868c961de641a6da937291a18d58ca622e))
+
 ## [2.0.0](https://github.com/buka-lnc/npm.class-transformer-extra/compare/v1.1.1...v2.0.0) (2024-08-29)
 
 

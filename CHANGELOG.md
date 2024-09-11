@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.1](https://github.com/buka-lnc/npm.class-transformer-extra/compare/v2.1.0...v2.1.1) (2024-09-11)
+
+
+### Bug Fixes
+
+* cannot import esm ([cfe8f0e](https://github.com/buka-lnc/npm.class-transformer-extra/commit/cfe8f0ea25d4598ca9257d03b2d7a5a87d73b33f))
+
 ## [2.1.0](https://github.com/buka-lnc/npm.class-transformer-extra/compare/v2.0.0...v2.1.0) (2024-09-03)
 
 

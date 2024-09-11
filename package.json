@@ -2,7 +2,7 @@
   "name": "@buka/class-transformer-extra",
   "version": "2.1.0",
   "description": "class-transformer-extra contains methods that's aren't included in the class-transform package.",
-  "packageManager": "pnpm@8.14.0",
+  "packageManager": "pnpm@9.10.0",
   "main": "dist/umd/src/index.js",
   "module": "dist/esm/src/index.js",
   "types": "dist/esm/src/index.d.ts",

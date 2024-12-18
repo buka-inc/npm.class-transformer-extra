@@ -10,7 +10,7 @@ export interface ToBigIntTransformOptions extends TransformOptions {
  */
 export function ToBigInt(options?: ToBigIntTransformOptions): PropertyDecorator {
   return Transform(
-    ({ value }) => {
+    function ToBigIntTransform({ value }) {
       if (options?.optional && value === undefined) return undefined
 
       try {

@@ -7,7 +7,7 @@ interface ToDateTransformOptions extends TransformOptions {
 
 export function ToDate(options?: ToDateTransformOptions): PropertyDecorator {
   return Transform(
-    ({ value }) => {
+    function ToDateTransform({ value }) {
       if (options?.optional && value === undefined) return undefined
       return new Date(value)
     },

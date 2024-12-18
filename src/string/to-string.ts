@@ -8,7 +8,7 @@ interface ToStringTransformOptions extends TransformOptions {
 
 export function ToString(options?: ToStringTransformOptions): PropertyDecorator {
   return Transform(
-    ({ value }) => {
+    function ToStringTransform({ value }) {
       if (options?.optional && value === undefined) return undefined
       return String(value)
     },

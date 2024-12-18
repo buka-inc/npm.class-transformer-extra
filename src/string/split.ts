@@ -13,7 +13,7 @@ export interface SplitTransformOptions extends TransformOptions {
 
 export function Split(separator: string, options?: SplitTransformOptions): PropertyDecorator {
   return Transform(
-    ({ value }) => {
+    function SplitTransform({ value }) {
       if (typeof value === 'string') {
         return value.split(separator)
       }

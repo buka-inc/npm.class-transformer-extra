@@ -7,7 +7,7 @@ export interface ToNumberTransformOptions extends TransformOptions {
 
 export function ToNumber(options?: ToNumberTransformOptions): PropertyDecorator {
   return Transform(
-    ({ value }) => {
+    function ToNumberTransform({ value }) {
       if (options?.optional && value === undefined) return undefined
       return Number(value)
     },

@@ -8,7 +8,7 @@ export interface FormatDateTransformOptions extends TransformOptions {
 
 export function FormatDate(template, options?: FormatDateTransformOptions): PropertyDecorator {
   return Transform(
-    ({ value }) => {
+    function FormatDateTransform({ value }) {
       if (options?.optional && value === undefined) return undefined
       return dayjs(value).format(template)
     },

@@ -4,7 +4,9 @@ import { flatten } from 'ramda'
 
 export function Flatten(options?: TransformOptions): PropertyDecorator {
   return Transform(
-    ({ value }) => (Array.isArray(value) ? flatten(value) as unknown : value as unknown),
+    function FlattenTransform({ value }) {
+      return (Array.isArray(value) ? flatten(value) as unknown : value as unknown)
+    },
     options,
   )
 }

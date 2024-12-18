@@ -1,4 +1,4 @@
-name: Auto assign issues
+name: Auto Assign
 
 on:
   issues:

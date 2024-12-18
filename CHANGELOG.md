@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.4](https://github.com/buka-inc/npm.class-transformer-extra/compare/v2.1.3...v2.1.4) (2024-12-18)
+
+
+### Bug Fixes
+
+* repository.url in package.json ([96e24da](https://github.com/buka-inc/npm.class-transformer-extra/commit/96e24da3e05640ee617b70df0aff2ed738fa1fdd))
+
 ## [2.1.3](https://github.com/buka-inc/npm.class-transformer-extra/compare/v2.1.2...v2.1.3) (2024-12-18)
 
 

@@ -1,11 +1,11 @@
 import { expect, test } from '@jest/globals'
 import { plainToClass } from 'class-transformer'
-import { toUpperCase } from './to-upper-case'
+import { ToUpperCase } from './to-upper-case'
 
 
 test('@ToUpperCase()', () => {
   class Test {
-    @toUpperCase()
+    @ToUpperCase()
     value?: string
   }
 

@@ -1,6 +1,6 @@
 import { expect, test } from '@jest/globals'
 import { plainToClass } from 'class-transformer'
-import { Filter, Flatten, FormatDate, Replace, Split, ToBigInt, ToBoolean, ToDate, ToLowerCase, ToNumber, ToString, Trim, Uniq, UniqBy, toUpperCase } from '../src/index.js'
+import { Filter, Flatten, FormatDate, Replace, Split, ToBigInt, ToBoolean, ToDate, ToLowerCase, ToNumber, ToString, Trim, Uniq, UniqBy, ToUpperCase } from '../src/index.js'
 
 class Test {
   // Number
@@ -28,7 +28,7 @@ class Test {
   @ToLowerCase()
   tLowerCase!: string
 
-  @toUpperCase()
+  @ToUpperCase()
   tUpperCase!: string
 
   @Split(',')

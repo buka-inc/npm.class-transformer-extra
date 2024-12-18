@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.3](https://github.com/buka-inc/npm.class-transformer-extra/compare/v2.1.2...v2.1.3) (2024-12-18)
+
+
+### Bug Fixes
+
+* rename toUpperCase function to ToUpperCase for consistency ([e3af12c](https://github.com/buka-inc/npm.class-transformer-extra/commit/e3af12c21b3309dd9478b9dfa3c6b8ffba9e0bc7))
+
+
+### Performance Improvements
+
+* replace arrow functions with named functions in transformation decorators ([a7df879](https://github.com/buka-inc/npm.class-transformer-extra/commit/a7df879a1b6cb25a41396fe68b6880b4a93342e2))
+
 ## [2.1.2](https://github.com/buka-lnc/npm.class-transformer-extra/compare/v2.1.1...v2.1.2) (2024-10-20)
 
 
